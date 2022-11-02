@@ -1,0 +1,379 @@
+.background
+{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background2,
+.background3
+{
+  overflow: hidden;
+}
+
+
+.background .back
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../public/images/wallpaper01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.background2 .back
+{
+  background: url(../../public/images/frailejon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.background3 .back
+{
+  background: url(../../public/images/photoGroup.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.background header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 400px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background header .logo
+{
+  position: relative;
+  font-size: 2em;
+  color: var(--color05);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 2px 2px rgb(0, 0, 0, 0.1);
+  transition: .5s;
+}
+
+.background header .toggle
+{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url('../../public/icons/menu.png');
+  background-position: center ;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background.active header .toggle.active
+{
+  background: url('../../public/icons/close.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 30px;
+}
+
+.background header .toggle::before
+{
+  content: 'Menu';
+  position: absolute;
+  right: 45px;
+  text-transform: uppercase;
+  color: var(--color01);
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2px 5px;
+  background: var(--color05);
+}
+
+.background.active header .toggle.active::before
+{
+  content: 'Cerrar';
+}
+
+.background .glass
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  box-shadow: 10px 0 15px rgb(0, 0, 0, 0.1);
+  transition: .5s;
+
+}
+
+.background.active .glass
+{
+  width: 100% !important;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+  box-shadow: 10px 0 15px rgb(0, 0, 0, 0.5);
+  transition-delay: 0;
+}
+
+.background .container
+{
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.background .container::-webkit-scrollbar
+{
+  width: 0;
+}
+
+.background .content,
+.background .contentVertical,
+.background.background2 .content,
+.background.background3 .content
+{
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  transition-delay: 1s;
+  transition: .5s;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background.background2 .content,
+.background.background3 .content
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 40%;
+  height: 40vh;
+  padding: 3%;
+}
+
+
+.background .content2
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.background .content2 div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(200px);
+  transition: .5s;
+}
+
+.background .content2.active div
+{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: calc(.1s * var(--i));
+}
+
+.background.active .content2 div
+{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(200px);
+}
+
+.background .content2 div a
+{
+  text-decoration: none;
+}
+
+.background .contentVertical
+{
+  transform: rotate(270deg) translateY(-400px);
+}
+
+.background.active .content,
+.background.active .contentVertical
+{
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0;
+}
+.background.active .content
+{
+  transform: translateX(-200px);
+}
+
+.background.background2.active .content,
+.background.background3.active .content
+{
+  transform: translate(50%, -100%);
+}
+
+.background.active .contentVertical
+{
+  transform: rotate(270deg) translateY(-400px) translateX(-200px);
+}
+
+.background .divider
+{
+  width: 3px;
+  height: 80%;
+  background: var(--color05);
+}
+
+.background .content>h2,
+.background .contentVertical>h2,
+.background .content2 div h2
+
+{
+  position: relative;
+  color: var(--color05);
+  font-size: 10vw;
+  line-height: 0.55em;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Dancing Script';
+}
+.background .contentVertical>h2,
+.background .content2 div h2
+
+{
+  font-size: 4vw;
+}
+
+.background .content2 div h2
+{
+  text-align: center;
+  line-height: normal;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+
+
+.background .content>h2 span,
+.background .contentVertical>h2 span,
+.background.background2 .content p,
+.background.background3 .content p
+
+{
+  font-size: .2em;
+  font-weight: 300;
+  letter-spacing: 5px;
+  background: var(--color05);
+  color: var(--color01);
+  padding: 0 10px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.background.background2 .content p,
+.background.background3 .content p
+{
+  font-size: 1.1em;
+  width: 100%;
+}
+
+
+.background .content2 div p
+{
+  color: #000;
+  padding: 3% 10%;
+  transition: .5s;
+}
+
+.background .content2 div img
+{
+  width: 70%;
+  height: 30vh;
+  margin: 0 15%;
+  object-fit: cover;
+}
+
+.background .navigation
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.background .navigation li
+{
+  list-style: none;
+  text-align: center;
+  margin: 15px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  transform: translateX(200px);
+  transition-delay: calc(.1s * var(--i));
+}
+
+.background.active .navigation li
+{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+  transition-delay: 0;
+
+}
+
+.background .navigation li a
+{
+  color: var(--color01);
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  background: var(--color05);
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+.background .navigation li a:hover
+{
+    background: var(--color02);
+    color: var(--color05);
+    letter-spacing: 10px;
+    text-transform: lowercase;
+}
