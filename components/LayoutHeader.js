@@ -6,7 +6,7 @@ const LayoutHeader = ({ content, logo, onlyTitle }) => {
   const [status, setStatus] = useState(false)
   return (
     <div className={status ? `${styles.background} ${styles.active}` : `${styles.background}`}>
-      <LayoutMenu status={status} statusFunction={setStatus} logo={logo}>
+      <LayoutMenu status={status} statusFunction={setStatus} logo={logo} title={content.attributes.Titulo}>
         <div className={styles.glass}></div>
         {
           onlyTitle
