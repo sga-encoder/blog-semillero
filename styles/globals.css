@@ -1,14 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
 
 :root
 {
   /* CSS HEX */
---color01: #073b3aff;
---color02: #0b6e4fff;
---color03: #08a045ff;
+--color01: #031e1eff;
+--color02: #084645;
+--color03: #08a045;
 --color04: #6bbf59ff;
 --color05: #f2fbe0ff;
+--color06: #c7cabf;
+--font01: 'Playfair Display';
+--font02: 'rubik';
 }
 
 *
@@ -16,7 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: rubik;
+  font-family: var(--font02);
 }
 *::-webkit-scrollbar
 {

@@ -1,0 +1,215 @@
+.container
+{
+  position: relative;
+  background: var(--color01);
+  color: var(--color05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3% 0;
+  z-index: 100;
+}
+
+.container .card
+{
+  position: relative;
+  width: 30%;
+  min-width: 350px;
+  max-width: 550px;
+  height: 250px;
+  padding: 1%;
+  margin: 1%;
+  background: var(--color02);
+}
+
+.container .card .card_content
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .card .card_content h2
+{
+  background: var(--color05);
+  color: var(--color01);
+  text-align: center;
+  width: 70%;
+  font-family: var(--font01);
+  position: absolute;
+  top: 10%;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container .card .card_content p
+{
+  color: var(--color05);
+  font-weight: 200;     
+  width: 80%;
+  padding: 2% 5%;
+  font-size: .8em;
+  text-align: center;
+}
+
+.container .card .glass
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  box-shadow: 10px 0 15px rgb(0, 0, 0, 0.1);
+  transition: .5s;
+}
+
+.container .card .back
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.container .card .back img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .right
+{
+  position: absolute;
+  bottom: 60px;
+  right: -45px;
+  display: flex;
+  z-index: 100;
+  color: var(--color05);
+  transform: rotate(270deg);
+  font-size: .5em;
+}
+
+.container .content
+{
+  width: 60%;
+}
+
+.container .content .h1,
+.container .content .h2,
+.container .content .h3,
+.container .content .h4,
+.container .content .h5,
+.container .content .h6
+{
+  color: var(--color02);
+  font-family: var(--font01);
+  font-size: 5.5em;
+  text-transform: capitalize;
+  line-height: 100%;
+}
+
+.container .content .h2
+{
+  color: var(--color03);
+  font-size: 4em
+}
+
+.container .content .h3
+{
+  font-size: 3.7em
+}
+
+.container .content .h4
+{
+  font-size: 3.5em
+}
+
+.container .content .h5
+{
+  font-size: 3.2em
+}
+
+.container .content .h6
+{
+  font-size: 3em
+}
+
+.container .content .p
+{
+  font-size: 1em;
+  font-weight: 300;
+  padding: 2% 0;
+}
+
+.container .content strong
+{
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.container .content a
+{
+  color: var(--color04);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container .content img
+{
+  max-width: 100%;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+  margin: 2% auto;
+}
+
+.container .content ol,
+.container .content ul
+{
+  margin-left: 4% ;
+}
+
+.container .content em
+{
+  color: #ffffff;
+}
+
+.container .content blockquote
+{
+  border-left: solid 5px var(--color02);
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .content blockquote p
+{
+  color: var(--color02);
+  font-style: italic;
+  font-weight: 400 !important;
+}
+
+.container .content blockquote em
+{
+  color: #108583 !important;
+}
