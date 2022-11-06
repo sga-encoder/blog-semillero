@@ -7,6 +7,7 @@ const Menu = ({ logo, status, styles, functionClick, title }) => {
     <header>
       <Head>
         <title>{title} - PNNN Semillero</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"></meta>
       </Head>
       <Link href={'/'} className={styles.logo}>
         <img
