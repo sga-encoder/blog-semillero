@@ -165,9 +165,9 @@
 {
   position: absolute;
   top: 50%;
-  transform: translate(50%, -50%);
-  width: 40%;
-  height: 40vh;
+  transform: translate(10%, -50%);
+  width: 57%;
+  height: 60vh;
   padding: 3%;
 }
 
@@ -391,9 +391,9 @@
 {
   position: absolute;
   bottom: 40px;
-  right: 100px;
+  right: 15%;
   display: flex;
-  z-index: 100;
+  z-index: 99;
   color: var(--color05)
 }
 
@@ -426,6 +426,20 @@
     letter-spacing: 2px;
     padding: 0 5px;
   }
+
+  .background .contentVertical
+  {
+    transform: translateY(-225px);
+  }
+
+  .background .content3
+  {
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 1.7vw;
+  }
 }
 
 @media (max-width: 610px)
@@ -433,7 +447,7 @@
   .background .content2
   {
     flex-wrap: wrap;
-    height: 110vh;
+    height: 200vh;
   }
 
   .background .content2 .divider
@@ -442,8 +456,19 @@
     height: 3px;
   }
 
+  .background .right2
+  {
+    top: 30%;
+  }
+
   .background .content2 div img
   {
     margin-bottom: 2%;
   }
+
+  .background .content3
+  {
+    font-size: 2.5vw;
+  }
+
 }

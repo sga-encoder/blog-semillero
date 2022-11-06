@@ -15,3 +15,11 @@
 {
   color: var(--color04)
 }
+
+@media (max-width: 610px)
+{
+  .Footer
+  {
+    font-size: .8em;
+  }
+}

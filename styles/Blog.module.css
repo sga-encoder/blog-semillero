@@ -213,3 +213,81 @@
 {
   color: #108583 !important;
 }
+
+@media (max-width: 1300px)
+{
+  .container .content .h1
+  {
+    font-size: 3.5em;
+  }
+
+  .container .content .h2
+  {
+    font-size: 3.2em
+  }
+
+  .container .content .h3
+  {
+  font-size: 3em
+  }
+
+  .container .content .h4
+  {
+  font-size: 2.7em
+  }
+
+  .container .content .h5
+  {
+  font-size: 2.5em
+  }
+
+  .container .content .h6
+  {
+  font-size: 2.2em
+  }
+
+  .container .content .p
+  {
+    font-size: .9em;
+  }
+
+  .container .content
+  {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 610px)
+{
+  .container .content .h1
+  {
+    font-size: 2.7em;
+  }
+
+  .container .content .h2
+  {
+    font-size: 2.5em
+  }
+
+  .container .content .h3
+  {
+  font-size: 2.2em
+  }
+
+  .container .content .h4
+  {
+  font-size: 2em
+  }
+
+  .container .content .h5
+  {
+  font-size: 1.7em
+  }
+
+  .container .content .h6
+  {
+  font-size: 1.5em
+  }
+
+}
