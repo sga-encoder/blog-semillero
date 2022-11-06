@@ -6,7 +6,7 @@ const Menu = ({ logo, status, styles, functionClick, title }) => {
   return (
     <header>
       <Head>
-        <title>{title}</title>
+        <title>{title} - PNNN Semillero</title>
       </Head>
       <Link href={'/'} className={styles.logo}>
         <img
