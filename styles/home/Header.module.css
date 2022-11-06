@@ -449,6 +449,12 @@
     flex-wrap: wrap;
     height: 200vh;
   }
+  
+  .background .content2 div h2
+  {
+    font-size: 8vw;
+
+  }
 
   .background .content2 .divider
   {
