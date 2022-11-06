@@ -21,10 +21,22 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font02);
-   overflow-x: hidden;
 }
+
 *::-webkit-scrollbar
 {
   width: 0;
 }
 
+
+@media (max-width: 610px)
+{
+  *
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font02);
+    overflow-x: hidden;
+  }
+}

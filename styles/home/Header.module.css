@@ -79,6 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
 }
 
 .background.active header .toggle.active
@@ -418,6 +419,7 @@
   .background .content h2
   {
     font-size: 18vw;
+    overflow-x: visible;
   }
 
   .background .content h2 span
