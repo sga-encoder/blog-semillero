@@ -10,7 +10,8 @@
   width: 100%;
 }  
 
-.Footer span, a
+.Footer span, 
+.Footer a
 {
   color: var(--color04)
 }
