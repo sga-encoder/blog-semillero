@@ -34,7 +34,7 @@
 
 .background header
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -320,9 +320,20 @@
   object-fit: cover;
 }
 
+.background .content2 a
+{
+  position: relative;
+  background: var(--color05);
+  padding: 2% 5%;
+  font-size: 1.2em;
+  color: var(--color01);
+  margin-top: 2%;
+  z-index: 300;
+}
+
 .background .navigation
 {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
