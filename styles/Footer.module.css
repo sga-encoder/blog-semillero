@@ -1,0 +1,16 @@
+.Footer
+{
+  background: var(--color01);
+  color: var(--color06);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+}  
+
+.Footer span, a
+{
+  color: var(--color04)
+}
