@@ -54,24 +54,26 @@ const Index = ({ content, about, whatDoWeDo, logo }) => {
           </div>
           <div className={percentage(scrolling * 2) >= 70 || movil ? `${styles.content2} ${styles.active}` : styles.content2}>
             <div style={{ '--i': 1 }}>
+              <h2>{about.data.attributes.Titulo}</h2>
+              <p>{about.data.attributes.Descripcion}</p>
+              <img
+                src={about.data.attributes.Fondo.data.attributes.url}
+                alt={about.data.attributes.Fondo.data.attributes.alternativeText}
+              />
               <Link href={'/quienes-somos'}>
-                <h2>{about.data.attributes.Titulo}</h2>
-                <p>{about.data.attributes.Descripcion}</p>
-                <img
-                  src={about.data.attributes.Fondo.data.attributes.url}
-                  alt={about.data.attributes.Fondo.data.attributes.alternativeText}
-                />
+                ver mas
               </Link>
             </div>
             <div className={styles.divider} style={{ '--i': 2 }}></div>
             <div style={{ '--i': 3 }}>
+              <h2>{whatDoWeDo.data.attributes.Titulo}</h2>
+              <p>{whatDoWeDo.data.attributes.Descripcion}</p>
+              <img
+                src={whatDoWeDo.data.attributes.Fondo.data.attributes.url}
+                alt={whatDoWeDo.data.attributes.Fondo.data.attributes.alternativeText}
+              />
               <Link href={'/que-hacemos'}>
-                <h2>{whatDoWeDo.data.attributes.Titulo}</h2>
-                <p>{whatDoWeDo.data.attributes.Descripcion}</p>
-                <img
-                  src={whatDoWeDo.data.attributes.Fondo.data.attributes.url}
-                  alt={whatDoWeDo.data.attributes.Fondo.data.attributes.alternativeText}
-                />
+                ver mas
               </Link>
             </div>
           </div>
