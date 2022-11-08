@@ -60,6 +60,7 @@ const Index = ({ content, about, whatDoWeDo, logo }) => {
                 src={about.data.attributes.Fondo.data.attributes.url}
                 alt={about.data.attributes.Fondo.data.attributes.alternativeText}
               />
+              <p className={styles.right}>PH: {about.data.attributes.Fondo.data.attributes.alternativeText}</p>
               <Link href={'/quienes-somos'}>
                 ver mas
               </Link>
@@ -72,6 +73,8 @@ const Index = ({ content, about, whatDoWeDo, logo }) => {
                 src={whatDoWeDo.data.attributes.Fondo.data.attributes.url}
                 alt={whatDoWeDo.data.attributes.Fondo.data.attributes.alternativeText}
               />
+              <p className={styles.right}>PH: {whatDoWeDo.data.attributes.Fondo.data.attributes.alternativeText}</p>
+
               <Link href={'/que-hacemos'}>
                 ver mas
               </Link>

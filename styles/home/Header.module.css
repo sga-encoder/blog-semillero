@@ -266,6 +266,7 @@
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   font-family: var(--font01);
   text-transform: capitalize;
+  overflow: visible;
 }
 .background .contentVertical>h2,
 .background .content2 div h2
@@ -303,6 +304,8 @@
 {
   font-size: 1.1em;
   width: 100%;
+  letter-spacing: normal;
+  padding: 5%;
 }
 
 
@@ -391,11 +394,12 @@
 .background .right2
 {
   position: absolute;
-  bottom: 40px;
+  bottom: 10%;
   right: 15%;
   display: flex;
   z-index: 99;
-  color: var(--color05)
+  color: var(--color05) !important;
+  text-shadow: 4px -1px 4px #000;
 }
 
 .background .right2
@@ -431,7 +435,12 @@
 
   .background .contentVertical
   {
-    transform: translateY(-225px);
+    transform: translateY(-200px);
+  }
+
+  .background .contentVertical h2
+  {
+    font-size: 8vw;
   }
 
   .background .content3
@@ -441,6 +450,13 @@
     transform: translate(-50%, -50%);
     width: 80%;
     font-size: 1.7vw;
+  }
+
+  .background .right,
+  .background .right2
+  {
+    right: 6%;
+    font-size: .68em;
   }
 }
 
@@ -452,7 +468,8 @@
     height: 200vh;
   }
   
-  .background .content2 div h2
+  .background .content2 div h2,
+  .background .contentVertical h2
   {
     font-size: 8vw;
 
