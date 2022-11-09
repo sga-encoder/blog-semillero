@@ -26,6 +26,12 @@ const NavbarList = ({ styles }) => {
             <Link href="/que-hacemos">
               Que hacemos
             </Link>
+      </li>
+
+      <li style={{ '--i': 5 }}>
+            <Link href="/galeria">
+              Galeria
+            </Link>
             </li>
 
     </ul>

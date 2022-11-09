@@ -1,0 +1,42 @@
+.galeriaContainer
+{
+  padding: 5%;
+  background: var(--color01);
+  color: var(--color05)
+}
+
+.galeriaContainer img
+{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.galeriaContainer .carousel-status
+{
+  font-family: var(--font02);
+}
+
+.galeriaContainer .carousel .slider-wrapper.axis-horizontal .slider
+{
+  overflow: visible;
+}
+
+.galeriaContainer li.thumb,
+.galeriaContainer li.thumb img
+{
+  height: 12vh;
+}
+
+.galeriaContainer .carousel.carousel-slider .control-arrow:hover
+{
+  backdrop-filter: blur(5px);
+}
+
+.galeriaContainer .carousel .slide .legend
+{
+  background: #0000;
+  backdrop-filter: blur(10px);
+  box-shadow: 10px 0 15px rgb(0, 0, 0, 0.1);
+  font-family: var(--font02);
+}
