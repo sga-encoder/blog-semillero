@@ -351,6 +351,11 @@
   z-index: 100;
 }
 
+.background .navigation2
+{
+  transform: translate(50%,-150%);
+}
+
 .background .navigation li
 {
   list-style: none;

@@ -47,7 +47,7 @@ const Index = ({ content, about, whatDoWeDo, logo }) => {
   return (
     <>
       <div ref={scroll} className={status ? `${styles.background} ${styles.active}` : styles.background}>
-        <LayoutMenu status={status} statusFunction={setStatus} logo={logo} title={'Inicio'}>
+        <LayoutMenu status={status} statusFunction={setStatus} logo={logo} title={'Inicio'} type2={true}>
           <div className={styles.glass} style={{ width: `${60 * percentage(scrolling * 2) / 100 + 40}%` }}></div>
           <div className={styles.content}>
             <h2>{content.data.attributes.Titulo}<br /> <span>{content.data.attributes.Subtitulo}</span></h2>
