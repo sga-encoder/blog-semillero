@@ -430,7 +430,7 @@
 
   .background .content h2
   {
-    font-size: 18vw;
+    font-size: 10vw;
     overflow-x: visible;
   }
 
@@ -504,4 +504,17 @@
     font-size: 2.5vw;
   }
 
+  .background .navigation2
+  {
+    transform: translate(50%,-225%);
+  }
+
+}
+
+@media (max-width: 480px)
+{
+  .background .navigation2
+  {
+    transform: translate(50%,-200%);
+  }
 }
