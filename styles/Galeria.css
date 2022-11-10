@@ -41,4 +41,5 @@
   font-family: var(--font02);
   bottom: auto;
   top: 55px;
+  opacity: .6;
 }
