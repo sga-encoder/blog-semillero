@@ -39,4 +39,6 @@
   backdrop-filter: blur(10px);
   box-shadow: 10px 0 15px rgb(0, 0, 0, 0.1);
   font-family: var(--font02);
+  bottom: auto;
+  top: 55px;
 }
