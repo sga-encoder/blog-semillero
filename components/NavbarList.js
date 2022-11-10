@@ -34,6 +34,12 @@ const NavbarList = ({ styles }) => {
             </Link>
             </li>
 
+      <li style={{ '--i': 6 }}>
+            <Link href="/mapa">
+              Mapa
+            </Link>
+            </li>
+
     </ul>
   )
 }
